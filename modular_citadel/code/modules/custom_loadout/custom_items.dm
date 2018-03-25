@@ -333,3 +333,17 @@
 	item_state = "wintergreencloak"
 	w_class = WEIGHT_CLASS_SMALL
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+
+/obj/item/clothing/neck/cloak/green
+	name = "polychromic cloak"
+	desc = "A fancy cloak made with polychromic threads."
+	icon_state = "polycecloak"
+	item_color = "polycecloak"
+	item_state = "polycecloak"
+	var/hasprimary = TRUE	//These vars allow you to choose which overlays a clothing has
+	var/hassecondary = TRUE
+	var/hastertiary = TRUE
+
+	var/primary_color = "#FFFFFF" //RGB in hexcode
+	var/secondary_color = "#FFFFFF"
+	var/tertiary_color = "#808080"
