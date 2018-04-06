@@ -275,6 +275,9 @@
 						"<span class='notice'>You give [src] a pat on the head to make [p_them()] feel better!</span>")
 			if(dna && dna.species && ((("tail_lizard" || "tail_human" || "mam_tail") in dna.species.mutant_bodyparts && (dna.features["tail_lizard"] || dna.features["tail_human"] || dna.features["mam_tail"])!= "None")))
 				emote("wag") //lewd
+		else if(check_zone(M.zone_selected) == "mouth")
+			M.visible_message("<span class='notice'>[M] gives [src] a smooch on the cheeks!</span>", \
+						"<span class='notice'>You give [src] a smooch on the cheeks!</span>")
 		else
 			M.visible_message("<span class='notice'>[M] hugs [src] to make [p_them()] feel better!</span>", \
 						"<span class='notice'>You hug [src] to make [p_them()] feel better!</span>")
